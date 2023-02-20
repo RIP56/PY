@@ -1,0 +1,12 @@
+Tup=(2,3,4,5,6,7,8)
+evenTup=()
+oddTup=()
+for i in Tup:
+    if i%2==0:
+        evenTup=evenTup+(i,)
+    else:
+        oddTup=oddTup+(i,)
+
+print("Even Elements Tuple:",evenTup)
+
+print("odd Elements Tuple:",oddTup)

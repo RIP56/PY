@@ -1,0 +1,14 @@
+import functools
+def max_ele(x,y):
+    if(x>y):
+        return x
+    else:
+        return y
+num_list=[2,3,1,10,6,2]
+print("Largest value in the list is:",functools.reduce(max_ele,num_list))
+
+
+def add(x,y):
+    return x+y
+num_list1= [4, 3, 1, 10, 6, 2]
+print ("sum value in the list is:",functools.reduce(add,num_list1))

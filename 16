@@ -1,0 +1,12 @@
+i=0
+n=int(input("Enter number of lines to write to a file"))
+with open("MyFile.txt","a") as f1:
+ while i<=n:
+ text = input("Enter text to append in the file:")
+ f1.writelines(text)
+ i=i+1
+with open("MyFile.txt","r") as f1:
+ data = f1.read()
+ data=data.replace(' ','-')
+with open("MyFile.txt","w") as f1:
+ f1.write(data)

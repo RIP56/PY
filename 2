@@ -1,0 +1,10 @@
+def sub_string(stri,n):
+    f = 2
+    if f > len(stri):
+        f = len(stri)
+    substr = stri[:f]  
+    result =''
+    for i in range(n):
+        result = result + substr
+    return result    
+print(sub_string('darshan',2))  
